@@ -10,11 +10,15 @@ import Counter from './components/Counter'
 import FunctionClick from './components/FunctionClick'
 import ClassClick from './components/ClassClick'
 import EventBind from './components/EventBind'
+import ParentComponent from './components/ParentComponent'
 
 function App(){
   return (
     <div className="App">
-      <EventBind/>
+
+      <ParentComponent/>
+
+     {/*<EventBind/>
       <FunctionClick/>
       <ClassClick/>
       <Counter/>
@@ -28,10 +32,10 @@ function App(){
       <Greet name = "Dayana" heroName="wonder Woman"/>
       <Welcome name = "Bruce" heroName="Batman"></Welcome>
       <Welcome name = "Cark" heroName="Superman"></Welcome>
-      <Hello></Hello>
+      <Hello></Hello> */}
 
     </div>
-  );
+  )
 }
 
 export default App;
