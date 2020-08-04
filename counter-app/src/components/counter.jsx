@@ -12,8 +12,9 @@ class Counter extends Component {
   
   //insted of using this constructor we can use => or arrow function 
   handleIncrement =()=> {
-    console.log("Increment Clicked",this);
-  }
+    this.state.count++;
+    this.setState({ count: this.state.count +1 });
+  };
   render() {
     return (
       <div>
