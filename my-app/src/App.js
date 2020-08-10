@@ -9,7 +9,10 @@ function App() {
   return(
     <div className="App" >
 
-      <Hello></Hello>
+      <Hello name="Zahin" age="12"></Hello>
+      <Hello name="Jarif" age="7"></Hello>
+      <Hello name="Afif" age="5"></Hello>
+      <Hello name="Azowa" age=".6"></Hello>
       <Welcome></Welcome>
     </div>
   )
