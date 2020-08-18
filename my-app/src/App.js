@@ -6,6 +6,7 @@ import Welcome from './mycomponents/Welcome'
 import Welcome1 from './mycomponents/Welcome1'
 import Hello1 from './mycomponents/Hello1'
 import Condition1 from './mycomponents/Condition1'
+import Refresh from './mycomponents/Refresh'
 
 function App() {
   return(
@@ -16,6 +17,7 @@ function App() {
       <Welcome1></Welcome1>
       <Hello1></Hello1>
       <Condition1></Condition1>
+      <Refresh></Refresh>
 
     </div>
   )
