@@ -5,19 +5,17 @@ class Condition1 extends Component {
 constructor(){
     super()
     this.state={
-        login:false
+        login:true
     }
 }
 
     state = {  }
     render() { 
 
-        if(this.state.login==true){
-        return ( <button>Log Out</button> );
-        }
-        else{
-            return(<button>Login Now</button>)
-        }
+        return(
+
+            this.state.login? <h1>Element=IM 1ST</h1> : <h1>Element=IM 2nd</h1>
+        )
     }
 }
  
