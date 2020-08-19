@@ -21,9 +21,12 @@ class Newdemo extends Component {
     render() {
         return (
             <div>
-                <button onClick={this.myFun}>NewDemo Change</button>
-                <h1 id="myID">my name is Sohel</h1>
+                <button onClick={this.myFun}>Change</button>
+                <h1 id="myID">my name is Sohel</h1><br></br>
+
+                
             </div>
+            
         );
     }
 }

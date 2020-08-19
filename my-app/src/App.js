@@ -8,6 +8,8 @@ import Hello1 from './mycomponents/Hello1'
 import Condition1 from './mycomponents/Condition1'
 import Refresh from './mycomponents/Refresh'
 import Newdemo from './mycomponents/Newdemo'
+import Anotherdemo from './mycomponents/Anotherdemo'
+import Forms from './mycomponents/Forms'
 
 function App() {
   return(
@@ -20,6 +22,9 @@ function App() {
       <Condition1></Condition1>
       <Refresh></Refresh>
       <Newdemo></Newdemo>
+      <Anotherdemo></Anotherdemo>
+      <Forms></Forms>
+
 
     </div>
   )
