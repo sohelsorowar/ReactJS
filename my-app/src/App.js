@@ -10,6 +10,7 @@ import Refresh from './mycomponents/Refresh'
 import Newdemo from './mycomponents/Newdemo'
 import Anotherdemo from './mycomponents/Anotherdemo'
 import Forms from './mycomponents/Forms'
+import Signup from './mycomponents/Signup'
 
 function App() {
   return(
@@ -24,6 +25,7 @@ function App() {
       <Newdemo></Newdemo>
       <Anotherdemo></Anotherdemo>
       <Forms></Forms>
+      <Signup></Signup>
 
 
     </div>
