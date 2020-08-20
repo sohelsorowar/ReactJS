@@ -6,15 +6,16 @@ class Forms extends Component {
 
         super()
         this.state={
-            name: " "
+            username: "  "
         }
 
     }
 
     onChangeHandler=(event)=>{
 
-        var newname = event.target.value;
-        this.setState({name:newname})
+        var myname = event.target.name;
+        var myvalue = event.target.value;
+        this.setState({[myname]:myvalue})
 
     }
 
@@ -24,8 +25,8 @@ class Forms extends Component {
 
                 <form>
                     <p>Fill The Form</p>
-                    <p>{this.state.name}</p>
-                    <input onChange={this.onChangeHandler} type="text" placeholder="User Name"></input>
+                    <p>{this.state.username}</p>
+                    <input name="username" onChange={this.onChangeHandler} type="text" placeholder="User Name"></input>
                     <input type="submit" value="Submit now"></input>
                 </form>
                 
