@@ -18,6 +18,35 @@ class Signup extends Component {
         var inputvalue = event.target.value;
         this.setState({[inputname]:inputvalue});
 
+
+        if(inputname==="fname"){
+            var namePattern= /^([A-Z a-z]){2,30}$/ ;
+            if(!namePattern.test(inputvalue)){
+                this.setState({fname:"First Name is Not valid"});
+            }
+        }
+
+        if(inputname==="lname"){
+            var namePattern= /^([A-Z a-z]){2,30}$/ ;
+            if(!namePattern.test(inputvalue)){
+                this.setState({lname:"First Name is Not valid"});
+            }
+        }
+
+        if(inputname==="email"){
+            var namePattern= /\S+@\S+\.\S+/ ;
+            if(!namePattern.test(inputvalue)){
+                this.setState({email:"First Name is Not valid"});
+            }
+        }
+
+        if(inputname==="mobile"){
+            
+            if(!Number(inputvalue)){
+                this.setState({mobile:"First Name is Not valid"});
+            }
+        }
+
     }
 
     render() {
