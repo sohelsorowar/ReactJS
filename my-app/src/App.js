@@ -11,7 +11,7 @@ import Newdemo from './mycomponents/Newdemo'
 import Anotherdemo from './mycomponents/Anotherdemo'
 import Forms from './mycomponents/Forms'
 import Signup from './mycomponents/Signup'
-
+import List from './mycomponents/List'
 function App() {
   return(
     <div className="App" >
@@ -26,6 +26,7 @@ function App() {
       <Anotherdemo></Anotherdemo>
       <Forms></Forms>
       <Signup></Signup>
+      <List></List>
 
 
     </div>
