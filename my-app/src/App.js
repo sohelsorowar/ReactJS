@@ -12,6 +12,11 @@ import Anotherdemo from './mycomponents/Anotherdemo'
 import Forms from './mycomponents/Forms'
 import Signup from './mycomponents/Signup'
 import List from './mycomponents/List'
+import Jsonlist from './mycomponents/Jsonlist'
+
+
+
+
 function App() {
   return(
     <div className="App" >
@@ -27,6 +32,7 @@ function App() {
       <Forms></Forms>
       <Signup></Signup>
       <List></List>
+      <Jsonlist></Jsonlist>
 
 
     </div>
