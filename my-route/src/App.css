@@ -2,6 +2,15 @@
   text-align: center;
 }
 
+.TextStyle{
+  background-color:gray;
+  color:white;
+  margin:40px;
+  padding:30px;
+
+}
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
