@@ -13,7 +13,7 @@ import Forms from './mycomponents/Forms'
 import Signup from './mycomponents/Signup'
 import List from './mycomponents/List'
 import Jsonlist from './mycomponents/Jsonlist'
-
+import MyTable from './mycomponents/MyTable'
 
 
 
@@ -33,6 +33,7 @@ function App() {
       <Signup></Signup>
       <List></List>
       <Jsonlist></Jsonlist>
+      <MyTable></MyTable>
 
 
     </div>
