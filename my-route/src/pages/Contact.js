@@ -7,39 +7,51 @@ import  axios from 'axios';
 
 
 class Contact extends Component {
+
+    constructor(){
+        super()
+        this.state={
+            tableInfo:[]
+        }
+    }
+
+
+    componentDidMount(){
+
+        axios.get('https://restcountries.eu/rest/v2/all')
+        .then(response=>{
+            this.setState({tableInfo:response.data})
+
+        })
+        .catch(error=>{
+            alert("something wrong")
+
+        })
+
+
+    }
+
+
+
+
+
+
+
     render() {
 
-        const tableData=[{  
-            name: 'Ayaan',  
-            age: 26  
-            },{  
-             name: 'Ahana',  
-             age: 22  
-             },{  
-             name: 'Peter',  
-             age: 40      
-             },{  
-             name: 'Virat',  
-             age: 30  
-             },{  
-             name: 'Rohit',  
-             age: 32  
-             },{  
-             name: 'Dhoni',  
-             age: 37  
-             }]
-        const col=[{Header:"Name",accessor:"name"},{Header:"Age",accessor:"age"}]
+        const tableData=this.state.tableInfo
+        const col=[{Header:"Country Name",accessor:"name"},{Header:"Capital",accessor:"capital"},{Header:"Population",accessor:"population"}]
 
 
          return (
             <div>
-                <h1 className="TextStyle2">This is Contact With SASS</h1>
+                <h1 className="TextStyle2">This is a React Table.Importing data from server.</h1>
                 <ReactTable
                 
                 data={tableData}
                 columns={col}
                 defaulPageSize={2}
-                pageSizeOptions={[2,4,6,10,20]}
+                pageSizeOptions={[2,10,20,50,100,200]}
                 />
             
             </div>
