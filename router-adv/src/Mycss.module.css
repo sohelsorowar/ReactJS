@@ -1,0 +1,17 @@
+.TextStyle{
+    background-color:rgb(245, 170, 170);
+    color:rgb(242, 248, 243);
+    margin:10%;
+    padding:10%;
+  
+  }
+.TextStyle1{
+    background-color:rgb(130, 133, 131);
+    width: 500px;
+    border: 2px white;
+    padding: 20px;
+    margin: 1px;
+    
+   
+  
+  }
