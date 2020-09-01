@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import {Link} from "react-router-dom";
-import "../components/assets/css/bootstrap.min.css";
-import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import { NavLink } from "react-router-dom";
+import "../components/assets/css/bootstrap.min.css";
 
 
 
@@ -13,11 +13,11 @@ class mynavigation extends Component {
             <div>
                  <Navbar bg="dark" variant="dark">
                      <Nav>
-                        <Nav.Link> <Link to="/" >Home </Link> </Nav.Link>
-                        <Nav.Link> <Link to="/page1" >Page1 </Link> </Nav.Link>
-                        <Nav.Link> <Link to="/page2" >Page2 </Link> </Nav.Link>
-                        <Nav.Link> <Link to="/page3" >Page3 </Link> </Nav.Link>
-                     </Nav>
+                        <Nav.Link> <NavLink exact activeStyle={{color:"white"}} to="/" >Home </NavLink> </Nav.Link>
+                        <Nav.Link> <NavLink activeStyle={{color:"white"}} to="/page1" >Page1 </NavLink> </Nav.Link>
+                        <Nav.Link> <NavLink activeStyle={{color:"white"}} to="/page2" >Page2 </NavLink> </Nav.Link>
+                        <Nav.Link> <NavLink  activeStyle={{color:"white"}} to="/page3" >Page3 </NavLink> </Nav.Link>
+                    </Nav>
                  
                 
 
