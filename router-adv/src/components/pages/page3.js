@@ -1,21 +1,23 @@
 import React, { Component } from 'react';
+import { Redirect } from 'react-router-dom';
 
 class page3 extends Component {
 
-    constructor({match}){
-        super();
-        this.state={
-            myname:match.params.username
-        }
-    }
+  
     render() {
-        return (
-            <div>
-                <h1>Page3</h1>
-                <h1>Data from page2 by urls: {this.state.myname}</h1>
-                
-            </div>
-        );
+
+        if(sessionStorage.getItem("userName")==null){
+            return <Redirect to="/login"/>
+         }
+        else{
+
+            return (
+                <div>
+                    <h1>page 3</h1>
+                </div>
+            );
+        }
+       
     }
 }
 

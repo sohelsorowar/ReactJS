@@ -6,6 +6,7 @@ import Page3 from "./pages/page3";
 import Home from "./pages/home";
 import notFound from "./pages/notFound";
 import { Switch} from "react-router-dom"
+import login from './pages/login';
 
 class myroute extends Component {
     render() {
@@ -13,9 +14,10 @@ class myroute extends Component {
             <div>
                 <Switch>
                 <Route exact path="/" component={Home} />
+                <Route exact path="/login" component={login} />
                 <Route exact path="/page1" component={Page1} />
                 <Route exact path="/page2" component={Page2} />
-                <Route exact path="/page3/:username" component={Page3} />
+                <Route exact path="/page3" component={Page3} />
                 <Route component={notFound} />
                 </Switch>
                 

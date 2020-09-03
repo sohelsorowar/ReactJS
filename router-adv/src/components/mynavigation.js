@@ -17,6 +17,7 @@ class mynavigation extends Component {
                         <Nav.Link> <NavLink activeStyle={{color:"white"}} to="/page1" >Page1 </NavLink> </Nav.Link>
                         <Nav.Link> <NavLink activeStyle={{color:"white"}} to="/page2" >Page2 </NavLink> </Nav.Link>
                         <Nav.Link> <NavLink  activeStyle={{color:"white"}} to="/page3" >Page3 </NavLink> </Nav.Link>
+                        <Nav.Link> <NavLink  activeStyle={{color:"white"}} to="/login" >Login </NavLink> </Nav.Link>
                     </Nav>
                  
                 

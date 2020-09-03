@@ -1,24 +1,23 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 
 class page2 extends Component {
 
-    constructor(){
-        super();
-        this.state={
-            passData:"Bangladesh"
-        }
-    }
+    render() {
 
-  render() {
-      var para="/page3/"+this.state.passData;
-    return (
-      <div>
-        <h1>Page 2</h1>
-        <buttorn><Link to={para}>Pass Data</Link></buttorn>
-        
-      </div>
-    );
+      if(sessionStorage.getItem("userName")==null){
+          return <Redirect to="/login"/>
+      }
+      else{
+
+          return (
+              <div>
+                  <h1>Page 2</h1>
+              </div>
+          );
+
+      }
+     
   }
 }
 
