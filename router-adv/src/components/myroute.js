@@ -7,6 +7,7 @@ import Home from "./pages/home";
 import notFound from "./pages/notFound";
 import { Switch} from "react-router-dom"
 import login from './pages/login';
+import Hook from './pages/hook';
 
 class myroute extends Component {
     render() {
@@ -18,6 +19,7 @@ class myroute extends Component {
                 <Route exact path="/page1" component={Page1} />
                 <Route exact path="/page2" component={Page2} />
                 <Route exact path="/page3" component={Page3} />
+                <Route exact path="/hook" component={Hook} />
                 <Route component={notFound} />
                 </Switch>
                 
