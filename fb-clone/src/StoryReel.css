@@ -1,0 +1,7 @@
+.storyReel{
+    display: flex;
+}
+
+.storyReel__sroty{
+    margin-right: 10px;
+}
