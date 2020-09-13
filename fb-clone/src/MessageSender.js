@@ -23,7 +23,7 @@ function MessageSender() {
                 <form>
                    <input value={input} onChange={(e)=> setInput(e.target.value)}
                     className="messageSender__input"
-                     placeholder={`What's on your mind?`} />
+                     placeholder={`What's on your mind ?`} />
                    <input 
                    value={imageUrl}
                    onChange={(e) => setImageUrl(e.target.value)}
