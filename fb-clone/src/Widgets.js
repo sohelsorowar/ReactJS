@@ -1,6 +1,6 @@
 import React from 'react';
+import Iframe from 'react-iframe';
 import './Widgets.css';
-import Iframe from 'react-iframe'
 
 
 function Widgets() {
