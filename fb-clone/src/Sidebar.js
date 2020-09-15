@@ -6,16 +6,18 @@ import PopleIcon from "@material-ui/icons/People";
 import StorefrontIcon from "@material-ui/icons/Storefront";
 import VideoLibraryIcon from "@material-ui/icons/VideoLibrary";
 import React from "react";
-import Photo from "./pass.jpg";
+
 import "./Sidebar.css";
 import SidebarRow from "./SidebarRow";
+import { useStateValue } from "./StateProvider";
 
 
 function Sidebar() {
+  const [user,dispatch]= useStateValue();
   return (
     <div className="sidebar">
       
-      <SidebarRow src={Photo} title="SohelSorowar" />
+      <SidebarRow src={user.photoUrl} title={user.displayName} />
       <SidebarRow
         Icon={LocalHospitalIcon}
         title="COVID-19 Information Center"
